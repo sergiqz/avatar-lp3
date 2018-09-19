@@ -13,7 +13,7 @@ public:
         _y=y;
     }
     void drawMe(QPainter *DrawHere){
-      QImage image1 ("C:/Users/LENOVO/Desktop/progra 3/avatar este si xd/Avatar-master/build-avatar-Desktop_Qt_5_2_0_MinGW_32bit-Debug/boca_triste.png");
+      QImage image1 ("C:/Users/LENOVO/Desktop/la salle/2018-2/programacion/avatar/LP3-proyect-master/build-avatar-Desktop_Qt_5_6_2_MSVC2015_32bit-Debug/boca_triste.png");
       DrawHere->drawImage(_x,_y,image1);
     }
 };

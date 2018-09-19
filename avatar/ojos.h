@@ -11,10 +11,11 @@ class Ojos
         double ycord;
 public:
     Ojos(double x, double y);
+    virtual ~Ojos(){}
     double getx();
-    double setx(double _xcord);
+    void setx(double _xcord);
     double gety();
-    double sety(double _ycord);
+    void sety(double _ycord);
     virtual void drawMe(QPainter *DrawHere)=0;
     static Ojos* crearOjos(int i);
 

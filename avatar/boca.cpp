@@ -6,14 +6,14 @@ Boca::Boca(double x,double y){
     ycord=y;
 
 }
-double Boca::setx(double _xcord){
+void Boca::setx(double _xcord){
     xcord=_xcord;
 }
 double Boca::getx(){
     return xcord;
 }
 
-double Boca::sety(double _ycord){
+void Boca::sety(double _ycord){
     ycord=_ycord;
 }
 double Boca::gety(){

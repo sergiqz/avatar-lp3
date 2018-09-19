@@ -14,10 +14,11 @@ class Boca
 
 public:
     Boca(double x, double y);
+    virtual ~Boca(){}
     double getx();
-    double setx(double _xcord);
+    void setx(double _xcord);
     double gety();
-    double sety(double _ycord);
+    void sety(double _ycord);
     virtual void drawMe(QPainter *DrawHere)=0;
     static Boca* crearBoca(int i);
 

@@ -17,6 +17,7 @@ class Cara
 public:
 
     Cara(int x, int y);
+    virtual ~Cara(){}
     int getx();
     void setx(int _xcord);
     int gety();

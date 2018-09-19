@@ -6,14 +6,14 @@ Ojos::Ojos(double x,double y){
     ycord=y;
 
 }
-double Ojos::setx(double _xcord){
+void Ojos::setx(double _xcord){
     xcord=_xcord;
 }
 double Ojos::getx(){
     return xcord;
 }
 
-double Ojos::sety(double _ycord){
+void Ojos::sety(double _ycord){
     ycord=_ycord;
 }
 double Ojos::gety(){

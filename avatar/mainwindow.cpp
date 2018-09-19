@@ -43,39 +43,42 @@ MainWindow::~MainWindow()
 
 Boca* Boca::crearBoca(int i)
 {
-    if (i == 1)
+    if (i == 1){
         return new bocafeliz(115,170);
-    else if (i == 2)
-        return new bocaserio(115,180);
-    else if (i==3)
+    }else if (i == 2){
+        return new bocaserio(10,100);
+    }else{
         return new bocatriste(115,180);
+    }
 }
 
 Cara* Cara::crearCara(int i)
 {
-    if (i == 1)
-        return new caradebalon(50,50);
-    else if (i == 2)
+    if (i == 1){
+        return new caradebalon(70,50);
+    }else if (i == 2){
         return new caraovalada(50,50);
-    else if (i==3)
+    }else{
         return new cararedonda(50,50);
+    }
 }
 
 Ojos* Ojos::crearOjos(int i)
 {
-    if (i == 1)
+    if (i == 1){
         return new ojosenojados(100,120);
-    else if (i == 2)
+    }else if (i == 2){
         return new ojosfelises(115,120);
-    else if (i==3)
+    }else{
         return new ojospro(115,120);
+    }
 }
 
 
 
 
 
-void MainWindow::on_caritas_activated(int index)
+void MainWindow::on_caritas_activated()
 {
     switch(ui->caritas->currentIndex())
     {
@@ -90,8 +93,9 @@ void MainWindow::on_caritas_activated(int index)
 
 }
 
-void MainWindow::on_ojitos_activated(int index)
+void MainWindow::on_ojitos_activated()
 {
+
     switch(ui->ojitos->currentIndex())
         {
             case 1: ojos=Ojos::crearOjos(1);
@@ -105,7 +109,7 @@ void MainWindow::on_ojitos_activated(int index)
 
 }
 
-void MainWindow::on_boquitas_activated(int index)
+void MainWindow::on_boquitas_activated()
 {
     switch(ui->boquitas->currentIndex())
         {

@@ -14,7 +14,7 @@ public:
     }
 
     void drawMe(QPainter *DrawHere){
-      QImage image1 ("C:/Users/LENOVO/Desktop/progra 3/avatar este si xd/build-avatar-Desktop_Qt_5_2_0_MinGW_32bit-Debug/blanco.png");
+      QImage image1 ("C:/Users/Walker Manrique/Documents/lenguaje de programacion/build-si-Desktop_Qt_5_2_0_MinGW_32bit-Debug/blanco.png");
       DrawHere->drawImage(_x,_y,image1);
     }
 };
