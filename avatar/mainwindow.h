@@ -15,7 +15,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = NULL);
+    explicit MainWindow(QWidget *parent =nullptr);
     ~MainWindow();
 
 private:
@@ -30,9 +30,6 @@ private:
 
 private slots:
 
-    void on_caritas_activated();
-    void on_ojitos_activated();
-    void on_boquitas_activated();
     void on_pushButton_clicked();
 };
 

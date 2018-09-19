@@ -55,7 +55,7 @@ Boca* Boca::crearBoca(int i)
 Cara* Cara::crearCara(int i)
 {
     if (i == 1){
-        return new caradebalon(70,50);
+        return new caradebalon(60,50);
     }else if (i == 2){
         return new caraovalada(50,50);
     }else{
@@ -73,57 +73,6 @@ Ojos* Ojos::crearOjos(int i)
         return new ojospro(115,120);
     }
 }
-
-
-
-
-
-void MainWindow::on_caritas_activated()
-{
-    switch(ui->caritas->currentIndex())
-    {
-            case 1: cara=Cara::crearCara(1);
-            avatar->crearCara(cara);
-            case 2: cara=Cara::crearCara(2);
-            avatar->crearCara(cara);
-            case 3: cara=Cara::crearCara(3);
-            avatar->crearCara(cara);
-
-     }
-
-}
-
-void MainWindow::on_ojitos_activated()
-{
-
-    switch(ui->ojitos->currentIndex())
-        {
-            case 1: ojos=Ojos::crearOjos(1);
-            avatar->crearOjos(ojos);
-            case 2: ojos=Ojos::crearOjos(2);
-            avatar->crearOjos(ojos);
-            case 3: ojos=Ojos::crearOjos(3);
-            avatar->crearOjos(ojos);
-
-        }
-
-}
-
-void MainWindow::on_boquitas_activated()
-{
-    switch(ui->boquitas->currentIndex())
-        {
-            case 1: boca=Boca::crearBoca(1);
-            avatar->crearBoca(boca);
-            case 2: boca=Boca::crearBoca(2);
-            avatar->crearBoca(boca);
-            case 3: boca=Boca::crearBoca(3);
-            avatar->crearBoca(boca);
-
-        }
-}
-
-
 
 void MainWindow::on_pushButton_clicked()
 {
